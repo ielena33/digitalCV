@@ -167,7 +167,7 @@ h1 {
   }
 
   #timeline ul li div {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 150px);
   }
 
   #timeline ul li:nth-child(even) div {
