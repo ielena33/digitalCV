@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('#timeline ul li');
+const items = document.querySelectorAll('#timeline li');
 
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
