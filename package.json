@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradtraversy/portfolio_website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bradtraversy/portfolio_website/issues"
+  },
+  "homepage": "https://github.com/bradtraversy/portfolio_website#readme"
+}
