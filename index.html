@@ -539,9 +539,7 @@
         <h2>Get In Touch</h2>
       
 
-       <form
-         action="https://formspree.io/f/xwkyydgj"
-         method="POST" name="contact">
+       <form method="POST" name="contact" data-netlify= "true">
 
           <div class="form-group">
 
@@ -630,8 +628,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
   <script src="main.js"></script>
  
+<script>
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("pizzaOrder");
+  let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
+</script>
  
 </body>
-
 </html>
