@@ -534,7 +534,9 @@
         <h2>Get In Touch</h2>
       
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form id = "fcontact"
+        action="https://formspree.io/f/xwkyydgj"
+        method="POST" name="contact" data-netlify="true">
 
           <div class="form-group">
 
@@ -562,7 +564,7 @@
                 </span>
               </div>
 
-              <input type="email" class="form-control bg-dark text-white" name="email" placeholder="Email">
+              <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email">
 
             </div>
 
@@ -578,15 +580,16 @@
                 </span>
               </div>
 
-              <textarea class="form-control bg-dark text-white" placeholder="Name"></textarea>
+              <textarea class="form-control bg-dark text-white" name="message" placeholder="Message"></textarea>
 
             </div>
 
           </div>
 
-          <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+          <button type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">Send</button> 
 
         </form>
+        
 
       </div>
 
@@ -623,19 +626,7 @@
   <script src="main.js"></script>
  
 
-  <script>
-    $('.port-item').click(function () {
-      $('.collapse').collapse('hide');
-    });
-
-    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
-      e.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  </script>
-
-  
-
+ 
 </body>
 
 </html>
