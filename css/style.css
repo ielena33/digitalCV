@@ -1,13 +1,16 @@
 #main-header img {
+  position:sticky;
   width: 100%;
   height: 100%;
 }
 
 #main-header .port-item {
+  position:sticky;
   width: 30%;
 }
 
 #main-header .port-item:hover {
+  position:sticky;
   opacity: 0.8;
   cursor: pointer;
 }
