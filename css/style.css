@@ -1,3 +1,11 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 #main-header img {
   position: sticky !important;
   width: 100%;
@@ -41,11 +49,7 @@
   --max-width: 1199px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font: normal 1rem/1.5 'Arial', sans-serif;
@@ -54,6 +58,8 @@ body {
   overflow-x: hidden;
   padding-bottom: 50px;
 }
+
+
 
 .container {
   max-width: var(--max-width);
@@ -178,7 +184,7 @@ h1 {
     left: 40px;
   }
 
-  #timeline ul li:nth-child(even) div:before {
+  #timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--secondary-color) transparent transparent;
